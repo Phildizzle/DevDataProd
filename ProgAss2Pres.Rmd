@@ -1,0 +1,28 @@
+---
+title: 'DevDataProd: Assignment 2'
+author: "Philipp Knoepfle"
+date: "1 Mai 2017"
+output:
+  slidy_presentation: default
+  ioslides_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Quick summary
+
+This quick presentation contains a plot made with `plotly`.
+
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(plotly)
+p <- plot_ly(midwest, x = ~percollege, color = ~state, type = "box")
+p
+```
+
+## The end
+
+Thanks for reading!
